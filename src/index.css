@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* =========================================================
+   MT EMERGENCIAS
+   Identidad visual base
+   ========================================================= */
+
+:root {
+  --mt-blue: #13385d;
+  --mt-blue-dark: #0b2742;
+  --mt-red: #c21b22;
+  --mt-red-dark: #9f151b;
+  --mt-yellow: #fbc94d;
+  --mt-orange: #da832a;
+  --mt-white: #fafaf8;
+  --mt-black: #101820;
+  --mt-gray: #64748b;
+  --mt-gray-light: #f1f5f9;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: var(--mt-black);
+  background-color: var(--mt-white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--mt-white);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================================================
+   SELECCIÓN DE TEXTO
+   ========================================================= */
+
+::selection {
+  background: var(--mt-red);
+  color: white;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mt-blue);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mt-red);
+}
+
+/* =========================================================
+   UTILIDADES MT
+   ========================================================= */
+
+.container-mt {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: 5rem;
+}
+
+@media (min-width: 768px) {
+  .container-mt {
+    width: min(100% - 4rem, 1280px);
+  }
+
+  .section-padding {
+    padding-block: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-block: 8rem;
+  }
+}
+
+/* =========================================================
+   FOCUS ACCESSIBLE
+   ========================================================= */
+
+:focus-visible {
+  outline: 3px solid var(--mt-yellow);
+  outline-offset: 3px;
+}
