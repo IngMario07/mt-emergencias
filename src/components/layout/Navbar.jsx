@@ -45,10 +45,10 @@ function Navbar() {
             aria-label="Ir al inicio de MT Emergencias"
           >
             <img
-              src="/src/public/images/LOGOMTSF.png"
-              alt="MT Emergencias"
-              className="h-14 w-auto"
-            />
+  src="/images/LOGOMTSF.png"
+  alt="MT Emergencias"
+  className="h-14 w-auto"
+/>
           </Link>
 
 
