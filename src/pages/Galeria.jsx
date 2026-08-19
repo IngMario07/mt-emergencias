@@ -14,6 +14,17 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 
+import AtePreh1 from '../assets/images/AtePreh1.jpeg'
+import AtePreh from '../assets/images/AtePreh.jpeg'
+import Bomberos from '../assets/images/Bomberos.jpeg'
+import CapaEspe from '../assets/images/CapaEspe.jpeg'
+import Certificacion from '../assets/images/Certificacion.jpeg'
+import pc from '../assets/images/pc.jpeg'
+import CEventos from '../assets/images/Evento2.jpeg'
+import RCP from '../assets/images/RCP.jpg'
+import EntrePrac from '../assets/images/EntrePrac.jpeg'
+import Capacitacion from '../assets/images/Capacitacion.jpeg'
+
 
 const galleryItems = [
   {
@@ -21,7 +32,7 @@ const galleryItems = [
     title: 'Formación en atención prehospitalaria',
     description:
       'Prácticas y ejercicios orientados al desarrollo de habilidades para responder ante situaciones de emergencia.',
-    image: null,
+    image: AtePreh1,
     icon: GraduationCap,
   },
 
@@ -30,7 +41,7 @@ const galleryItems = [
     title: 'Prácticas de atención y RCP',
     description:
       'Actividades prácticas para fortalecer conocimientos y habilidades de respuesta ante emergencias.',
-    image: null,
+    image: RCP,
     icon: ShieldCheck,
   },
 
@@ -39,7 +50,7 @@ const galleryItems = [
     title: 'Simulación de escenarios de emergencia',
     description:
       'Ejercicios prácticos que permiten aplicar protocolos y técnicas de atención prehospitalaria.',
-    image: null,
+    image: AtePreh,
     icon: Ambulance,
   },
 
@@ -48,7 +59,7 @@ const galleryItems = [
     title: 'Evaluación de competencias',
     description:
       'Procesos de evaluación realizados con base en los criterios establecidos en el Estándar de Competencia correspondiente.',
-    image: null,
+    image: Certificacion,
     icon: Award,
   },
 
@@ -57,7 +68,7 @@ const galleryItems = [
     title: 'Preparación y respuesta',
     description:
       'Actividades relacionadas con prevención, preparación y respuesta ante situaciones de emergencia.',
-    image: null,
+    image: pc,
     icon: Flame,
   },
 
@@ -66,7 +77,7 @@ const galleryItems = [
     title: 'Entrenamiento práctico',
     description:
       'Sesiones prácticas diseñadas para que los participantes desarrollen experiencia en situaciones controladas.',
-    image: null,
+    image: EntrePrac,
     icon: GraduationCap,
   },
 
@@ -75,7 +86,7 @@ const galleryItems = [
     title: 'Cobertura y atención de eventos',
     description:
       'Servicios especializados para eventos privados, empresariales y actividades especiales.',
-    image: null,
+    image: CEventos,
     icon: Ambulance,
   },
 
@@ -84,7 +95,7 @@ const galleryItems = [
     title: 'Preparación para emergencias',
     description:
       'Capacitación y actividades enfocadas en prevención y preparación ante diferentes escenarios.',
-    image: null,
+    image: Capacitacion,
     icon: ShieldCheck,
   },
 ]

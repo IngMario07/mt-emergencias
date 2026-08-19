@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 
+
 const navLinks = [
   { label: 'Inicio', path: '/' },
   { label: 'Nosotros', path: '/nosotros' },
@@ -45,16 +46,11 @@ function Navbar() {
             aria-label="Ir al inicio de MT Emergencias"
           >
             <img
-  src="/images/LOGOMTSF.png"
-  alt="MT Emergencias"
-  className="h-14 w-auto"
-/>
+              src="/images/LOGOMTSF.png"
+              alt="MT Emergencias"
+              className="h-14 w-auto"
+            />
           </Link>
-
-
-          {/* =========================================
-              NAVEGACIÓN ESCRITORIO
-              ========================================= */}
 
           <div className="hidden items-center gap-7 lg:flex">
 

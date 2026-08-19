@@ -13,6 +13,13 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 
+import AtePrehImg from '../assets/images/AtePreh1.jpeg'
+import BomberosImg from '../assets/images/Bomberos.jpeg'
+import CapacitacionImg from '../assets/images/Capacitacion.jpeg'
+import CertificacionImg from '../assets/images/Certificacion.jpeg'
+import PcImg from '../assets/images/pc.jpeg'
+import EventoImg from '../assets/images/Evento2.jpeg'
+
 const services = [
   {
     id: 'prehospitalaria',
@@ -22,7 +29,7 @@ const services = [
     subtitle: 'Respuesta y atención especializada',
     description:
       'Servicios orientados a la atención prehospitalaria y respuesta ante situaciones que requieren atención especializada antes de llegar a una unidad hospitalaria.',
-    image: '/images/servicio-prehospitalaria.jpg',
+    image: AtePrehImg,
     benefits: [
       'Atención prehospitalaria',
       'Personal capacitado',
@@ -38,7 +45,7 @@ const services = [
     subtitle: 'Prevención, preparación y respuesta',
     description:
       'Servicios relacionados con la prevención, preparación y respuesta ante situaciones de emergencia dentro del ámbito bomberil.',
-    image: '/images/servicio-bomberil.jpg',
+    image: BomberosImg,
     benefits: [
       'Servicios relacionados con emergencias',
       'Prevención y preparación',
@@ -54,7 +61,7 @@ const services = [
     subtitle: 'Aprende. Practica. Prepárate.',
     description:
       'Cursos y capacitación especializada dirigidos a personas, empresas e instituciones que buscan fortalecer sus conocimientos y habilidades.',
-    image: '/images/servicio-capacitacion.jpg',
+    image: CapacitacionImg,
     benefits: [
       'Capacitación especializada',
       'Formación teórica y práctica',
@@ -70,7 +77,7 @@ const services = [
     subtitle: 'Reconoce tus competencias',
     description:
       'Procesos de evaluación y certificación por competencias con base en el Estándar de Competencia correspondiente.',
-    image: '/images/servicio-certificacion.jpg',
+    image: CertificacionImg,
     benefits: [
       'Evaluación de competencias',
       'Estándares de Competencia',
@@ -86,7 +93,7 @@ const services = [
     subtitle: 'Preparación para responder',
     description:
       'Servicios y capacitación relacionados con prevención, preparación y respuesta ante situaciones de emergencia y protección civil.',
-    image: '/images/servicio-proteccion-civil.jpg',
+    image: PcImg,
     benefits: [
       'Prevención de riesgos',
       'Preparación ante emergencias',
@@ -102,7 +109,7 @@ const services = [
     subtitle: 'Tu evento, con respaldo profesional',
     description:
       'Cobertura y atención para eventos privados, empresariales y actividades especiales que requieren apoyo relacionado con emergencias.',
-    image: '/images/servicio-eventos.jpg',
+    image: EventoImg,
     benefits: [
       'Cobertura de eventos',
       'Eventos privados',
@@ -123,10 +130,6 @@ function Servicios() {
     <div className="min-h-screen bg-white text-slate-900">
 
       <Navbar />
-
-      {/* =====================================================
-          HERO
-          ===================================================== */}
 
       <section className="relative overflow-hidden bg-[#071b2f] pt-20">
 
@@ -187,7 +190,6 @@ function Servicios() {
 
       </section>
 
-
       {/* =====================================================
           INTRODUCCIÓN
           ===================================================== */}
@@ -218,7 +220,6 @@ function Servicios() {
 
       </section>
 
-
       {/* =====================================================
           SERVICIOS
           ===================================================== */}
@@ -235,7 +236,6 @@ function Servicios() {
             {services.map((service, index) => {
 
               const Icon = service.icon
-
               const reversed = index % 2 !== 0
 
               return (
@@ -276,7 +276,6 @@ function Servicios() {
 
                     </div>
 
-
                     {/* =====================================
                         INFORMACIÓN
                         ===================================== */}
@@ -298,7 +297,6 @@ function Servicios() {
                       <p className="mt-5 leading-7 text-slate-600">
                         {service.description}
                       </p>
-
 
                       {/* Beneficios */}
                       <div className="mt-7 space-y-3">
@@ -325,12 +323,11 @@ function Servicios() {
 
                       </div>
 
-
                       {/* Botones */}
                       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
                         <a
-                          href={`${whatsappUrl}&text=${encodeURIComponent(
+                          href={`https://wa.me/524151701311?text=${encodeURIComponent(
                             `Hola, MT Emergencias. Me interesa el servicio de ${service.title}. Me gustaría recibir información y una cotización.`
                           )}`}
                           target="_blank"
@@ -366,7 +363,6 @@ function Servicios() {
         </div>
 
       </section>
-
 
       {/* =====================================================
           ¿NO SABES QUÉ SERVICIO NECESITAS?
@@ -419,7 +415,7 @@ function Servicios() {
 
       </section>
 
-        <Footer />
+      <Footer />
 
     </div>
   )
