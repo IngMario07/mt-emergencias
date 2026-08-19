@@ -5,17 +5,17 @@ const testimonials = [
   {
     name: 'Testimonio próximamente',
     role: 'Participante de capacitación',
-    text: 'Aquí colocaremos una experiencia real de nuestros participantes.',
+    text: '',
   },
   {
     name: 'Testimonio próximamente',
     role: 'Participante de certificación',
-    text: 'Aquí colocaremos una experiencia real relacionada con nuestros procesos de certificación.',
+    text: '',
   },
   {
     name: 'Testimonio próximamente',
     role: 'Cliente MT Emergencias',
-    text: 'Aquí colocaremos una experiencia real de uno de nuestros clientes.',
+    text: '',
   },
 ]
 
@@ -24,10 +24,6 @@ function TestimonialsSection() {
     <section className="section-padding bg-[#f8fafc]">
 
       <div className="container-mt">
-
-        {/* =========================================
-            ENCABEZADO
-            ========================================= */}
 
         <div className="mx-auto max-w-3xl text-center">
 
